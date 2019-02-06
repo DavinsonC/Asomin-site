@@ -25,9 +25,9 @@
 
     </head>
       
-</META>
 
-<body >
+
+ <body >
 		
       
 
@@ -37,38 +37,31 @@
 
 <header class="main_menu_sec navbar navbar-default navbar-fixed-top">
 	<div class="container">
-		<div class="row" style="text-align: right;">
-			
+		<div class="row">
+			<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="lft_hd">
+					<a href="index.html"><h1 style="color: #ffffff;"><STRONG>ASOMIN</STRONG></h1></a>
+				</div>
+			</div>
+
 					
-		<a href="cerrar.php" style="text-align: right;"><h3 style="text-align: left;">cerrar</h3></a>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Open modal
-</button>
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Modal body..
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
+			<div class="col-lg-9 col-md-9 col-sm-12">
+				<div class="rgt_hd">					
+					<div class="main_menu">
+						<nav id="nav_menu">
+							
+						<div id="navbar">
+							<ul>
+								<li><a class="page-scroll" href="index.html">Inicio</a></li> 
+								<li><a class="page-scroll" href="Nosotros.html">Cargar imagenes</a></li>
+								           
+							</ul>
+						</div>		
+						</nav>			
+					</div>					
+						
+				</div>
+			</div>	
 		</div>	
 	</div>	
 </header>

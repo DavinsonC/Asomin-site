@@ -436,8 +436,19 @@
             <a href="#img1">></a>
         </div>
         <a class="cerrar" href="img/asomin12.jpg">X</a>
-    </div>            
-
+    </div> 
+    <?php
+            include ("conexion.php");
+			$re=mysqli_query($con,"select * from Fotos where codigo ='1'");
+			while ($f=mysqli_fetch_array($re)) {
+					echo '<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
+                    <div class="single-portfolio web-design">
+                    <a href="'.$f['nombre'].'"><img style="width: 300px; height: 200px;" class="img-responsive" src="img/'.$f['nombre'].'" alt=""></a>
+                    </div>				
+                    </div>';
+			}
+		?>           
+            
               
 					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
 					<div class="single-portfolio web-design">
