@@ -85,14 +85,14 @@
 		</div>	
 	</div>	
 </header>
-<br><br><br><br>
+<br><br><br><br><br><br>
    
 	
 	<form class="form-horizontal" style="width: inherit;" role="form" action="altaFoto.php" method="post" enctype="multipart/form-data">
 	   <section class="panel panel-primary " style="width: inherit;">
        <div style="width: inherit;" >
        <center style="width: inherit;" >
-           <img src="images/galeria.png" style="width: inherit;" height="140">
+           <img src="img/galeria.png" style="width: inherit;" height="140">
            <h4 style="color: blue">Subir Nueva Foto</h4>
        </center>
        
@@ -111,7 +111,7 @@
      </div>
      
      <div class="form-group" style="width: inherit;" >
-         <label for="inputPassword" class="control-label col-xs-2">Logo:</label>
+         <label for="inputPassword" class="control-label col-xs-2">Foto:</label>
          <div class="col-xs-9">
              <input type="file" name="file" class="form-control" placeholder="Logo del hotel">
          </div>

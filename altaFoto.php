@@ -27,12 +27,12 @@
 		      	}else{
 		      		move_uploaded_file($_FILES["file"]["tmp_name"],
 		      		"img/".$_FILES["file"]["name"]);
-		      		echo "Archivo guardado en " . "img/" .$_FILES["file"]["name"];
+		      	
 		      		$Descrip=$_POST['Descripcion'];
 		      		
-                     echo $Descrip,$imagen;
+                     
 
-					$Sql="insert into hoteles () values(
+					$Sql="insert into Fotos (Descripcion, nombre) values(
 							'".$Descrip."',
 							
 							'".$imagen."')";
@@ -40,10 +40,11 @@
 
                      
 					mysqli_query($con,$Sql);
-					echo $Sql;
-
-                                        echo "<script languaje='javascript'>alert('Imagen Registrada')</script>";
-                    //header("Location:agregarHOTELES.php");
+					
+                        echo'<script type="text/javascript">
+        alert("Imagen Registrada");
+        window.location.href="subirImagenes.php";
+        </script>';
 					
 		      }
 		    }
