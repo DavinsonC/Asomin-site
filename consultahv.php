@@ -46,7 +46,7 @@ session_start();
          alert('No se permite espacios en blanco, por favor,  escriba su cedula!')
          }else{
              var dir ="consultahv.php?filtro="+filtro;
-             window.location.href="http://asomin.com.co/"+dir;
+             window.location.href="http://localhost/sima/"+dir;
             } 
          });
          });
@@ -121,7 +121,7 @@ session_start();
                 
             
                             <?php 
-                          $resultado=mysqli_query($con,"select * from Curriculum ");
+                          $resultado=mysqli_query($con,"select * from Curriculum  where documento='". $_GET['filtro']."'");
                         if(mysqli_num_rows($resultado) > 0){
                          $resul="<table class='table table-striped w-aut'>
                          <tr>
@@ -138,18 +138,18 @@ session_start();
                             $resul.=' 
                             <tr>
                                 
-                                <td class="active"><input readonly name="id" type="text" class="active" value="'.$row['documento'].'"></td>
-                                <td class="active"><input readonly name="id" type="text" class="active" value="'.$row['Nombre'].'"></td>
-                                <td class="active"><input readonly name="n" type="text" class="nombre" value="'.$row['Apellido'].'"></td>
-                                 <td class="active"><input readonly name="n" type="text" class="nombre" value="'.$row['Ciudad'].'"></td>
-                                 <td class="active"><input readonly name="n" type="text" class="nombre" value="'.$row['Carrera'].'"></td>
-                                <td class="active"><input readonlyname="t"  type="text" class="vip" value="'.$row['Telefono'].'"></td>
+                                <td class="active"><input name="id" type="text" class="active" value="'.$row['documento'].'"></td>
+                                <td class="active"><input name="id" type="text" class="active" value="'.$row['Nombre'].'"></td>
+                                <td class="active"><input name="n" type="text" class="nombre" value="'.$row['Apellido'].'"></td>
+                                 <td class="active"><input name="n" type="text" class="nombre" value="'.$row['Ciudad'].'"></td>
+                                 <td class="active"><input name="n" type="text" class="nombre" value="'.$row['Carrera'].'"></td>
+                                <td class="active"><input name="t"  type="text" class="vip" value="'.$row['Telefono'].'"></td>
                                 <td class="success"><a href="archivos/'.$row['Hv'].'"><input  name="p"  type="text" class="premi" value="'.$row['Hv'].'"></a></td>
                                                 
                             </tr>'; };
                             echo $resul;}
                         else{
-                             echo "no hay hojas de vida registradas ";
+                             echo "no hay hojas de vida registradas con esta cedula";
                              }
                              ?>
             
@@ -159,3 +159,4 @@ session_start();
         
 </body>
 </html>
+

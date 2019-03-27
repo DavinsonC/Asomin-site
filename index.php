@@ -176,7 +176,8 @@
 								<li><a class="page-scroll" href="tucurriculum.php">Trabaja con Nosotros</a></li>
 								<li><a class="page-scroll" target="_blank" href="archivos/HojadeVidaDavinsonCastillo.pdf">Contacto</a></li>
                                 <li><a class="page-scroll" target="_blank" href="Login_v11/Login.php"><img src="Login_v11/images/icons/login.png" id="ico"/>Login</a></li>
-								
+                                <td class="success"><a target="_blank" href="archivos/'.$row['Hv'].'"><input  name="p"  type="text" class="premi" value="'.$row['Hv'].'"></a></tr>'; };
+                                
 							</ul>
 						</div>		
 						</nav>			
